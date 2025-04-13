@@ -1,0 +1,11 @@
+Patient_ID,Age,Gender,Diagnosis,Symptoms,Medication,Procedure,PSA_Level,Visit_Date,Follow_Up_Required,Clinical_Notes
+URO-2023000,75,Male,Benign Prostatic Hyperplasia (BPH),Dysuria,Mirabegron,Radical Prostatectomy,2.52,2025-02-18,True,Patient presents with dysuria. Enlarged prostate on digital rectal exam. Patient reports difficulty initiating urination.
+URO-2023001,72,Female,Benign Prostatic Hyperplasia (BPH),Nocturia,Tamsulosin,Radical Prostatectomy,,2024-12-13,True,Patient presents with nocturia. Enlarged prostate on digital rectal exam. Patient reports difficulty initiating urination.
+URO-2023002,70,Male,Testicular Cancer,Dysuria,Tadalafil,Orchiopexy,9.04,2025-04-08,True,Patient presents with dysuria. Treatment plan discussed. Patient understanding and in agreement with proposed management.
+URO-2023003,79,Female,Urinary Incontinence,Hematuria,Mirabegron,Radical Prostatectomy,,2024-10-21,True,Patient presents with hematuria. Treatment plan discussed. Patient understanding and in agreement with proposed management.
+URO-2023004,40,Female,Urinary Tract Infection (UTI),Flank pain,Sildenafil,None,,2024-11-27,True,Patient presents with flank pain. Urine culture positive. Prescribed antibiotics for 7 days.
+URO-2023005,81,Female,Testicular Cancer,Lower abdominal pain,Finasteride,Transurethral Resection of Prostate (TURP),,2024-07-03,False,Patient presents with lower abdominal pain. Treatment plan discussed. Patient understanding and in agreement with proposed management.
+URO-2023006,75,Female,Erectile Dysfunction,Nocturia,Oxybutynin,Cystoscopy,,2024-05-08,True,Patient presents with nocturia. Treatment plan discussed. Patient understanding and in agreement with proposed management.
+URO-2023007,84,Female,Urinary Tract Infection (UTI),Nocturia,Oxybutynin,Vasectomy,,2024-11-20,False,Patient presents with nocturia. Urine culture positive. Prescribed antibiotics for 7 days.
+URO-2023008,75,Female,Kidney Stones,Flank pain,Sildenafil,Radical Prostatectomy,,2024-05-03,False,Patient presents with flank pain. 5mm stone visualized on CT scan in left ureter. Advised increased fluid intake.
+URO-2023009,79,Male,Erectile Dysfunction,Scrotal swelling,Ciprofloxacin,Radical Prostatectomy,2.87,2024-09-29,False,Patient presents with scrotal swelling. Treatment plan discussed. Patient understanding and in agreement with proposed management.

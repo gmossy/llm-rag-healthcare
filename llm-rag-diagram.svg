@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">LM Studio RAG System Architecture</text>
+  
+  <!-- Data Source -->
+  <rect x="50" y="100" width="160" height="60" rx="5" ry="5" fill="#e6f7ff" stroke="#1890ff" stroke-width="2" />
+  <text x="130" y="135" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">CSV Data Source</text>
+  <text x="130" y="155" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">urology_patient_data.csv</text>
+  
+  <!-- Data Processing -->
+  <rect x="50" y="240" width="160" height="80" rx="5" ry="5" fill="#f6ffed" stroke="#52c41a" stroke-width="2" />
+  <text x="130" y="270" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Data Processing</text>
+  <text x="130" y="290" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">Document Creation</text>
+  <text x="130" y="310" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">Metadata Extraction</text>
+  
+  <!-- LM Studio Embeddings -->
+  <rect x="320" y="100" width="160" height="60" rx="5" ry="5" fill="#fff2e8" stroke="#fa8c16" stroke-width="2" />
+  <text x="400" y="135" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">LM Studio Embeddings</text>
+  <text x="400" y="155" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">Vector Generation</text>
+  
+  <!-- ChromaDB Vector Store -->
+  <rect x="320" y="240" width="160" height="80" rx="5" ry="5" fill="#f9f0ff" stroke="#722ed1" stroke-width="2" />
+  <text x="400" y="270" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">ChromaDB</text>
+  <text x="400" y="290" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">Vector Storage</text>
+  <text x="400" y="310" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">Similarity Search</text>
+  
+  <!-- LM Studio LLM -->
+  <rect x="590" y="100" width="160" height="60" rx="5" ry="5" fill="#e6f7ff" stroke="#1890ff" stroke-width="2" />
+  <text x="670" y="135" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">LM Studio LLM</text>
+  <text x="670" y="155" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">Text Generation</text>
+  
+  <!-- Query Processing -->
+  <rect x="590" y="240" width="160" height="80" rx="5" ry="5" fill="#fff2e8" stroke="#fa8c16" stroke-width="2" />
+  <text x="670" y="270" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Query Processing</text>
+  <text x="670" y="290" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">Context Building</text>
+  <text x="670" y="310" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">Prompt Engineering</text>
+  
+  <!-- User Interface -->
+  <rect x="320" y="400" width="160" height="60" rx="5" ry="5" fill="#f6ffed" stroke="#52c41a" stroke-width="2" />
+  <text x="400" y="435" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">User Interface</text>
+  <text x="400" y="455" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">Interactive CLI</text>
+  
+  <!-- Database Management -->
+  <rect x="320" y="500" width="160" height="60" rx="5" ry="5" fill="#f9f0ff" stroke="#722ed1" stroke-width="2" />
+  <text x="400" y="535" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Database Management</text>
+  <text x="400" y="555" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">Backup & Recovery</text>
+  
+  <!-- Arrows -->
+  <!-- Data Flow -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+  
+  <!-- Data Source to Data Processing -->
+  <line x1="130" y1="160" x2="130" y2="240" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Data Processing to ChromaDB -->
+  <line x1="210" y1="280" x2="320" y2="280" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Data Source to LM Studio Embeddings -->
+  <path d="M 210 130 C 250 130, 280 130, 320 130" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- LM Studio Embeddings to ChromaDB -->
+  <path d="M 400 160 C 400 190, 400 210, 400 240" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- ChromaDB to Query Processing -->
+  <path d="M 480 280 C 520 280, 550 280, 590 280" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Query Processing to LM Studio LLM -->
+  <path d="M 670 240 C 670 210, 670 190, 670 160" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- LM Studio LLM to User Interface -->
+  <path d="M 670 160 C 670 350, 520 430, 480 430" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- User Interface to Query Processing -->
+  <path d="M 400 400 C 400 350, 550 350, 590 280" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Database Management to ChromaDB -->
+  <path d="M 400 500 C 400 470, 400 350, 400 320" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Legend -->
+  <rect x="600" y="500" width="150" height="80" rx="5" ry="5" fill="white" stroke="#ddd" stroke-width="1" />
+  <text x="675" y="520" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">Legend</text>
+  
+  <rect x="610" y="530" width="12" height="12" fill="#e6f7ff" stroke="#1890ff" stroke-width="1" />
+  <text x="650" y="540" font-family="Arial, sans-serif" font-size="10" fill="#333">Data Components</text>
+  
+  <rect x="610" y="550" width="12" height="12" fill="#f6ffed" stroke="#52c41a" stroke-width="1" />
+  <text x="650" y="560" font-family="Arial, sans-serif" font-size="10" fill="#333">Processing Steps</text>
+  
+  <rect x="610" y="570" width="12" height="12" fill="#f9f0ff" stroke="#722ed1" stroke-width="1" />
+  <text x="650" y="580" font-family="Arial, sans-serif" font-size="10" fill="#333">Storage Systems</text>
+</svg>

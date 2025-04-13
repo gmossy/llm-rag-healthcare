@@ -1,0 +1,20 @@
+2025-04-13 00:48:37,793 - DataLoader - INFO - Initialized DataLoader with persistence directory: ./chroma_db
+2025-04-13 00:50:45,527 - DataLoader - INFO - Initialized DataLoader with persistence directory: ./chroma_db
+2025-04-13 00:51:36,939 - DataLoader - INFO - Initialized DataLoader with persistence directory: ./chroma_db
+2025-04-13 00:52:37,273 - DataLoader - INFO - Starting data loading process for urology-patient-data-additional.csv
+2025-04-13 00:52:37,281 - DataLoader - INFO - CSV validation successful: 10 rows, 11 columns
+2025-04-13 00:52:37,281 - DataLoader - INFO - CSV columns: Patient_ID, Age, Gender, Diagnosis, Symptoms, Medication, Procedure, PSA_Level, Visit_Date, Follow_Up_Required, Clinical_Notes
+2025-04-13 00:52:37,282 - DataLoader - INFO - Initializing LM Studio Embeddings with model: text-embedding-medical-10-10-1-jinaai_jina-embeddings-v2-small-en-50-gpt-3.5-turbo-01_9062874564-i1
+2025-04-13 00:52:37,459 - DataLoader - INFO - Successfully connected to LM Studio embeddings API
+2025-04-13 00:52:37,459 - DataLoader - INFO - Embedding model initialized successfully
+2025-04-13 00:52:37,459 - DataLoader - INFO - Found existing database. Creating backup at ./chroma_db_backup_1744519957
+2025-04-13 00:52:37,478 - DataLoader - INFO - Backup created successfully
+2025-04-13 00:52:37,483 - DataLoader - INFO - Removed existing database to prevent compatibility issues
+2025-04-13 00:52:37,484 - DataLoader - INFO - Loaded 10 rows from urology-patient-data-additional.csv
+2025-04-13 00:52:37,485 - DataLoader - INFO - Using 'Clinical_Notes' as content column
+2025-04-13 00:52:37,487 - DataLoader - INFO - Created 10 document objects
+2025-04-13 00:52:37,493 - DataLoader - INFO - Creating vector store with ChromaDB
+2025-04-13 00:52:37,504 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-13 00:52:37,768 - DataLoader - INFO - Embedding 10 documents in batches of 10
+2025-04-13 00:52:37,843 - DataLoader - INFO - Processed 10/10 documents
+2025-04-13 00:52:37,872 - DataLoader - INFO - Successfully created vector store at ./chroma_db

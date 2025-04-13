@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "llm-rag"
+version = "0.1.0"
+description = ""
+authors = ["Glenn Mossy <mossy_glenn@bah.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.11.11, <3.14"  # Expand range to include both 3.11 and 3.13
+pandas = "*"
+chromadb = "*"
+requests = "*"
+langchain = "^0.3.23"
+langchain-community = "^0.3.21"
+langchain-core = "^0.3.51"
+langchain-chroma = "*"  # Add dedicated langchain-chroma package
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
